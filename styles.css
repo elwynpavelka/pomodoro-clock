@@ -1,93 +1,111 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
   text-align: center;
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   background-color: #0D0B24;
-  box-sizing: border-box;
   color: #EFF0E3;
 }
 
-.change .material-icons {
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 12px;
-  margin-top: 35px;
-  margin-bottom: 12px;
-}
-
-#container {
-  position: absolute;
-  margin-top: 200px;
-  width: 100%;
-  height: 160px;
+#wrapper {
+  margin-top: 20vh;
+margin-bottom: 20vh;
+	padding: 0 15px;
   background-color: #EFF0E3;
-  letter-spacing: 3px;
+		border-bottom: 3px solid #F58C14;
+	border-top: 3px solid #F58C14;
+}
+.col {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.row {
+	  display: flex;
+  flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.material-icons {
+		font-size: 40px;
+}
+#controls-titles {
+	order: 3;
+	align-self: stretch;
+	justify-content: center;
+	padding: 0;
+	align-items: stretch;
+}
+#controls-titles div {
+	text-align: left;
+	margin: 20px 0;
+	padding-left: 20px;
+	padding-right: 10px;
+	z-index: 1;
+	font-size: 29px;
+		border: 3px solid #7B0F31;
+}
+.title {
+color:  #0D0B24;
+padding-left: 30px;
+}
+#controls-titles .material-icons {
+	line-height: 20px;
+	color: #F58C14;
 }
 
 .set-time {
-  position: relative;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-color: #7B0F31;
-  margin: 0px 30px;
   border-radius: 50%;
   border: 2px solid #EFF0E3;
   box-shadow: 0 0 0 6px #F58C14, 0 0 0 9px #EFF0E3, 0 0 0 12px #7B0F31, 0 0 0 15px #EFF0E3;
-}
-
-.set-time-text {
-  line-height: 0px;
-  width: 100px;
-  position: absolute;
-  top: 50%;
-  height: 100px;
-  margin-top: -60px;
-}
-
-#top {
-  margin-top: -40px;
-}
-
-#bottom {
-  margin-top: 40px;
+	font-family: 'Garamond', serif;
+	font-style: italic;
+	font-size: 46px;
 }
 
 #countdown-container {
-  position: absolute;
-  margin: 145px 200px;
-  height: 265px;
-  width: 265px;
-  padding-top: 40px;
+  order: 0;
+  height: 250px;
+  width: 250px;
   background-color: #F58C14;
   border-radius: 50%;
   border: 2px solid #EFF0E3;
   box-shadow: 0 0 0 6px #7B0F31, 0 0 0 9px #EFF0E3, 0 0 0 12px #F58C14, 0 0 0 16px #7B0F31, 0 0 0 20px #EFF0E3;
-  font-size: 54px;
+  font-size: 67px;
+	padding: 10px;
 }
-
-#countdown-container h2 {
-  margin-top: 20px;
-  font-family: 'Garamond', serif;
-  font-style: italic;
-  text-transform: lowercase;
-}
-
-#activity {
-  font-size: 22px;
-  padding: 0px;
-}
-
 #countdown-container p {
-  margin-top: -30px;
+	line-height: 0;
+}
+#spacer .material-icons {
+	color: #F58C14;
+}
+#activity {
+  order: 1;
+	padding: 20px;
+  color:  #0D0B24;
+  font-size: 100px;
+	line-height: 90px;
+	margin: 30px 0;
+	border-bottom: 3px solid #F58C14;
+	border-top: 3px solid #F58C14;
+}
+#countdown-container .material-icons {
+			margin: 0 10px;
 }
 
-.change:hover,
 #countdown:hover,
-#reset:hover {
+.material-icons:hover {
   cursor: pointer;
 }

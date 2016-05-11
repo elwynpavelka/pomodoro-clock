@@ -13,4 +13,4 @@ Project Objectives:
 
 _______________
 
-View live: http://egpavelka.com/FCC/pomodoro
+View live: http://egpavelka.com/pomodoro
