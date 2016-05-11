@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+<audio id="alarm" src="http://www.wavsource.com/snds_2016-02-07_4793960535163652/sfx/toot2_x.wav" autostart="false"></audio>
+<div id="container">
+  <div class="set-time" id="top">
+    <div class="set-time-text">
+    <h2>work</h2>
+    <span class="change" onClick="lessWork()"><i class="material-icons">chevron_left</i></span>
+    <span id="work">27</span>
+    <span class="change" onClick="moreWork()"><i class="material-icons">chevron_right</i></span></div>
+  </div>
+  <div class="set-time" id="bottom">
+    <div class = "set-time-text">
+    <h2>play</h2>
+      <span class="change" onClick="lessPlay()"><i class="material-icons">chevron_left</i></span>
+    <span id="play">7</span>
+    <span class="change" onClick="morePlay()"><i class="material-icons">chevron_right</i></span>
+    </div>
+  </div>
+</div>
+    <div id="countdown-container">
+    <h2 id="activity">get to work</h2>
+    <span id="countdown" onClick="toggleTimer()">START</span>
+      <p>
+         <i class="material-icons change" id="pauseicon" onClick="pauseTimer()">pause</i>
+        <i class="material-icons change" onClick="stopTimer()">stop</i>
+      </p>
+  </div>
+</body>
+
+</html>

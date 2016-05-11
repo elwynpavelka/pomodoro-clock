@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+body {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background-color: #0D0B24;
+  box-sizing: border-box;
+  color: #EFF0E3;
+}
+
+.change .material-icons {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 12px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+#container {
+  position: absolute;
+  margin-top: 200px;
+  width: 100%;
+  height: 160px;
+  background-color: #EFF0E3;
+  letter-spacing: 3px;
+}
+
+.set-time {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: #7B0F31;
+  margin: 0px 30px;
+  border-radius: 50%;
+  border: 2px solid #EFF0E3;
+  box-shadow: 0 0 0 6px #F58C14, 0 0 0 9px #EFF0E3, 0 0 0 12px #7B0F31, 0 0 0 15px #EFF0E3;
+}
+
+.set-time-text {
+  line-height: 0px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: -60px;
+}
+
+#top {
+  margin-top: -40px;
+}
+
+#bottom {
+  margin-top: 40px;
+}
+
+#countdown-container {
+  position: absolute;
+  margin: 145px 200px;
+  height: 265px;
+  width: 265px;
+  padding-top: 40px;
+  background-color: #F58C14;
+  border-radius: 50%;
+  border: 2px solid #EFF0E3;
+  box-shadow: 0 0 0 6px #7B0F31, 0 0 0 9px #EFF0E3, 0 0 0 12px #F58C14, 0 0 0 16px #7B0F31, 0 0 0 20px #EFF0E3;
+  font-size: 54px;
+}
+
+#countdown-container h2 {
+  margin-top: 20px;
+  font-family: 'Garamond', serif;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+#activity {
+  font-size: 22px;
+  padding: 0px;
+}
+
+#countdown-container p {
+  margin-top: -30px;
+}
+
+.change:hover,
+#countdown:hover,
+#reset:hover {
+  cursor: pointer;
+}
