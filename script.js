@@ -1,4 +1,4 @@
-(function(){
+
   // CHANGE LENGTH OF SESSIONS
     // Decrease or increase by minute the timer for each activity; prevent negative and null times, sessions longer than thirty minutes.
   function lessWork() {
@@ -109,7 +109,6 @@
       timerOn = false;
     }
   }
-}());
 /////////// END CALL TIMER
 
 /*
