@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background-color: #0D0B24;
+    color: #EFF0E3;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.container {
+    padding: 0 15px;
+    background-color: #EFF0E3;
+    border-bottom: 3px solid #F58C14;
+    border-top: 3px solid #F58C14;
+}
+
+.col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-icons {
+    font-size: 3rem;
+}
+
+.controls-titles {
+    order: 3;
+    align-self: stretch;
+    justify-content: center;
+    padding: 0;
+    align-items: stretch;
+}
+
+.controls-titles div {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  z-index: 1;
+  font-size: 2.25rem;
+  border: 3px solid #7B0F31;
+}
+
+.title {
+    color: #0D0B24;
+    padding-left: 30px;
+}
+
+.controls-titles .material-icons {
+    line-height: 20px;
+    color: #F58C14;
+}
+
+.set-time {
+  height: 80px;
+  width: 80px;
+  background-color: #7B0F31;
+  border-radius: 50%;
+  border: 2px solid #EFF0E3;
+  box-shadow: 0 0 0 6px #F58C14, 0 0 0 9px #EFF0E3, 0 0 0 12px #7B0F31, 0 0 0 15px #EFF0E3;
+  font-family: 'Garamond', serif;
+  font-style: italic;
+  font-size: 46px;
+}
+
+.countdown-container {
+  order: 0;
+  height: 15rem;
+  width: 15rem;
+  background-color: #F58C14;
+  border-radius: 50%;
+  border: 2px solid #EFF0E3;
+  box-shadow: 0 0 0 6px #7B0F31, 0 0 0 9px #EFF0E3, 0 0 0 12px #F58C14, 0 0 0 16px #7B0F31, 0 0 0 20px #EFF0E3;
+  font-size: 4rem;
+}
+
+.countdown {
+  padding-top: 1rem;
+}
+
+.countdown-container .material-icons {
+  margin: 0 10px;
+}
+
+.countdown:hover, .material-icons:hover {
+  cursor: pointer;
+}
+
+
+
+.activity {
+  order: 1;
+  padding: 1rem;
+  color: #0D0B24;
+  font-size: 5.5rem;
+  line-height: 5rem;
+  margin: 30px 0;
+  border-bottom: 3px solid #F58C14;
+  border-top: 3px solid #F58C14;
+}

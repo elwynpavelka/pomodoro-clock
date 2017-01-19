@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>e.g. pavelka || pomodoro clock</title>
     <script>
 		(function(i, s, o, g, r, a, m) {
@@ -26,38 +26,40 @@
 </head>
 <body>
   <audio id="alarm" src="http://www.wavsource.com/snds_2016-02-07_4793960535163652/sfx/toot2_x.wav" autostart="false"></audio>
-  <div id="wrapper" class="row">
-    <div id="controls-titles" class="col">
+
+<div id="wrapper" class="col">
+  <div class="container row">
+    <div class="controls-titles col">
       <div class="row">
-		<span id="work" class="set-time col">27</span>
+    <span id="work" class="set-time col">30</span>
         <span class="title">work</span>
         <span class="col">
-					 	  <i class="material-icons" onclick="moreWork()">arrow_drop_up</i>
-		      <i class="material-icons" onclick="lessWork()">arrow_drop_down</i>
-		 </span>
+              <i class="material-icons" onclick="moreWork()">arrow_drop_up</i>
+          <i class="material-icons" onclick="lessWork()">arrow_drop_down</i>
+     </span>
       </div>
       <div class="row">
-        <span id="play" class="set-time col">7</span>
+        <span id="play" class="set-time col">5</span>
         <span class="title">play</span>
         <span class="col">
-				 	  <i class="material-icons" onclick="morePlay()">arrow_drop_up</i>
-				 <i class="material-icons" onclick="lessPlay()">arrow_drop_down</i>
-				  </span>
+            <i class="material-icons" onclick="morePlay()">arrow_drop_up</i>
+         <i class="material-icons" onclick="lessPlay()">arrow_drop_down</i>
+          </span>
       </div>
     </div>
 
 
-    <div id="countdown-container" class="col">
-      <p class="row" id="spacer"><i class="material-icons">stop</i></p>
-      <span id="countdown" onclick="toggleTimer()">START</span>
-      <p class="row">
+    <div class="countdown-container col">
+      <div class="countdown" onclick="toggleTimer()">START</div>
+      <div class="row">
         <i class="material-icons" id="pauseicon" onclick="pauseTimer()">pause</i>
         <i class="material-icons" onclick="stopTimer()">stop</i>
-      </p>
+      </div>
     </div>
 
-    <div id="activity">get to work</div>
+    <div class="activity" id="activity">get to work</div>
   </div>
+</div>
 </body>
 
 </html>
